@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.rbc-event-allday {
+    padding: 10px;
+    height: 10vh !important;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rbc-event {
+    padding: 25%;
+    height: 15vh !important;
+    text-align: center;
+}
+#leftbox {
+    padding-left: 5%;
+    float:left; 
+    width:25%;
+    height:280px;
+}
+#middlebox{
+    float:left; 
+    width:50%;
+    height:280px;
+}
+#rightbox{
+    float:right;
+    width:25%;
+    height:280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-group {
+     
+    margin:auto;
+    float:left;
+    padding-top:0px;
+    width: 100%;
+   }
+   .lead {
+    
+    margin:auto;
+    left:0;
+    right:0;
+    padding-top:10%;
+   }
+
+   .list-group-item:focus, .list-group-item:hover {
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+.list-group-item.active {
+    color: #fff !important;
+    background-color: rgb(1, 145, 107);
+    border-color: rgb(1, 145, 107);
+ }
+.list-group-item.active:hover {
+    background-color: rgb(1, 145, 107);
+    border-color: rgb(1, 145, 107);
+}
+.page-title{
+    margin: 30px 0px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-device-width: 480px) {
+    
+    .rbc-event {
+        padding: 5px;
+        height: 20vh !important;
+        text-align: center;
+        font-size: 9px;
+    }
+    
 }
